@@ -5,26 +5,8 @@
     border: 0;
 }
 
-header a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24pt;
-    font-family: 'Teko', sans-serif;
-}
-
-header a:hover {
-    color: black;
-    opacity: 0.7;
-    transform: scale(1.1);
-}
-
-a.logo img {
-    width: 12rem;
-    height: 12rem;
-    transition: 0.3s;
-}
-
-
+/* Header */
+/* NavBar */
 nav {
     box-sizing: border-box;
     width: 100%;
@@ -35,29 +17,55 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    /* box-shadow: ; */
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    width: auto;
-    max-width: 50%;
+    box-shadow: 1px 1px 14px #222;
 }
 
 nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
+    padding-left: 5%
 }
 
+/* Botão */
+nav ul li {
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 32px;
+    background-color: rgb(206, 50, 50);
+}
+
+/* Texto Botão */
 nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24pt;
     font-weight: 900;
     font-family: 'Changa', sans-serif;
     font-size: 36px;
     letter-spacing: 8px;
+}
+
+/* Texto Botão Hover */
+header li:hover {
+    background-color: rgb(175, 44, 44);
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px #222;
+}
+
+/* Logo */
+a.logo img {
+    width: 10rem;
+    height: 10rem;
+    transition: 1s;
+    
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+a.logo img:hover {
+    transform: scale(1.1);
 }
 
 main {
