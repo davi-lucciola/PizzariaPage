@@ -11,7 +11,7 @@ nav {
     box-sizing: border-box;
     width: 100%;
     background-color: bisque;
-    padding-inline: 5%;
+    padding-inline: 10%;
 
     display: flex;
     justify-content: space-between;
@@ -25,15 +25,18 @@ nav ul {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding-left: 5%
 }
 
 /* Botão */
 nav ul li {
     text-align: center;
+
+    width: 200px;
     padding: 5px 20px;
     border-radius: 32px;
+
     background-color: rgb(206, 50, 50);
+    transition: 0.3s;
 }
 
 /* Texto Botão */
@@ -48,7 +51,7 @@ nav ul li a {
 }
 
 /* Texto Botão Hover */
-header li:hover {
+nav ul li:hover {
     background-color: rgb(175, 44, 44);
     transform: scale(1.1);
     box-shadow: 1px 1px 5px #222;
@@ -58,7 +61,7 @@ header li:hover {
 a.logo img {
     width: 10rem;
     height: 10rem;
-    transition: 1s;
+    transition: 0.3s;
     
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
@@ -68,13 +71,14 @@ a.logo img:hover {
     transform: scale(1.1);
 }
 
-main {
-    height: 700vh;
+main img {
+    width: 100%;
 }
 
 footer img {
-    width: 100%;
     position: fixed;
     bottom: 0;
+    width: 100%;
+    height: 20vh;
 }
 
