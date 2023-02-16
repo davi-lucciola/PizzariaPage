@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/NavBar.css">
+    <link rel="stylesheet" href="../css/pedido.css">
     <link rel="shortcut icon" href="../images/pizza-favicon.png" type="image/x-icon">
     <title> Pedido </title>
 </head>
@@ -22,14 +23,19 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div id="pedido">
+            <h1> Faça Seu Pedido </h1>
             <form action="/" method="post">
-                <label for=""> </label>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <select name="" id="">
-                     Selecione os Sabores </select>
-                </select>
+                <p>
+                    <label for="nome"> Nome </label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+                <p>
+                    <label for="sabor"> Sabor </label>
+                    <select name="sabor" id="">
+                        <option value="" selected dis> Selecione os Sabores </option>
+                    </select>
+                </p>
             </form>
         </div>
     </main>
