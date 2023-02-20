@@ -13,27 +13,37 @@
     <title> Pedido </title>
 </head>
 <body>
-    <nav>
-        <a href="/" class="logo"><img src="../images/pizzaria-logo.png" alt="pizzaria-logo"></a>
-        <ul class="nav-list">
-            <a href="/pages/sabores.html"> <li> Sabores </li> </a>
-            <a href="/pages/pedido.html"> <li> Pedido </li> </a>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <a href="/" class="logo"><img src="../images/pizzaria-logo.png" alt="pizzaria-logo"></a>
+            <ul class="nav-list">
+                <a href="./sabores.html"> <li> Sabores </li> </a>
+                <a href="./pedido.html"> <li> Pedido </li> </a>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div id="pedido">
             <h1> Faça Seu Pedido </h1>
-            <form action="/" method="post">
-                <p>
+            <form action="#" method="post" class="form_pedido">
+                <p class="form_pedido">
                     <label for="nome"> Nome </label>
                     <input type="text" name="nome" id="nome">
                 </p>
-                <p>
+                <p class="form_pedido">
                     <label for="sabor"> Sabor </label>
-                    <select name="sabor" id="">
-                        <option value="" selected dis> Selecione os Sabores </option>
+                    <select multiple name="sabor" id="">
+                        <option value="" selected disabled> Selecione os Sabores </option>
+                        <option value="calabresa"> Calabresa </option>
+                        <option value="calabresa"> 4 Queijos </option>
                     </select>
                 </p>
+                <p class="form_pedido">
+                    <label for="endereco"> Endereco </label>
+                    <input type="text" name="endereco" id="endereco">
+                </p>
+
+                <button type="submit"> Concluir Pedido </button>
             </form>
         </div>
     </main>

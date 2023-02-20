@@ -19,3 +19,9 @@ main div#pedido {
     max-height: fit-content;
     background: rgb(206, 50, 50);
 }
+
+.form_pedido  {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

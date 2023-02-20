@@ -107,11 +107,17 @@ nav ul a {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: rgb(206, 50, 50);
     }
 
     nav ul a:hover {
         background-color: rgb(175, 44, 44);
         transform: translateY(5px);
-        box-shadow: 1px 1px 1px #222;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    nav ul:hover {
+        background-color: rgb(175, 44, 44);
     }
 }
