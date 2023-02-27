@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/NavBar.css">
     <link rel="stylesheet" href="../css/sabores.css">
     <link rel="shortcut icon" href="../images/pizza-favicon.png" type="image/x-icon">
@@ -17,30 +17,32 @@
         <nav>
             <a href="/" class="logo"><img src="../images/pizzaria-logo.png" alt="pizzaria-logo"></a>
             <ul class="nav-list">
-                <a href="./sabores.html"> <li> Sabores </li> </a>
-                <a href="./pedido.html"> <li> Pedido </li> </a>
+                <li> <a href="../pages/sabores.html">  Sabores  </a> </li>
+                <li> <a href="../pages/pedido.html"> Pedido </a> </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="pizza-sabores">
-            <div class="sabor-pizza-card">
+        <section id="pizza-cards">
+            <section class="pizza-card">
                 <img src="../images/sabores/calabresa.jpg" alt="pizza-calabresa">
-                <div class="sabor">
+                <section class="pizza-info">
                     <span class="sabor"> Calabresa </span>
-                    <p> Pizza de molho de tomate, queijo, calabresa, azeitona e cebola </p>
-                </div>
+                    <small class="descricao">
+                        Pizza de molho de tomate, queijo, calabresa, azeitona e cebola
+                    </small>
+                </section>
                 <span class="price"> R$ 34.99 </span>
-            </div>
+            </section>
             <div class="sabor-pizza-card">
                 <img src="../images/sabores/pizza-4-queijos.png" alt="pizza-4-queijos">
                 <div class="sabor">
                     <span> 4 Queijos </span>
-                    <p> Pizza de molho de tomate, queijo, calabresa, azeitona e cebola</p>
+                    <small> Pizza de molho de tomate, queijo, calabresa, azeitona e cebola </small>
                 </div>
                 <span class="price"> R$ 34.99 </span>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <!-- <img src="./images/footer-png.png" alt="footer-red-png"> -->

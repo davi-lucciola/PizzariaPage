@@ -4,32 +4,48 @@ main {
     justify-content: center;
 }
 
-main div#pizza-sabores {
+#pizza-cards {
     padding-top: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 6vh;
 
-
-    width: 60%;
     min-height: 80vh;
-    max-height: fit-content;
 }
 
-main img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%
-}
+@media (max-width: 800px) {
+    #pizza-cards {
+        width: 70%;
+    }
 
-main div.sabor-pizza-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+    .pizza-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
 
-    background: rgb(206, 50, 50);
-    padding: 32px 48px;
-    border-radius: 24px;
+        background: rgb(206, 50, 50);
+        padding: 32px 48px;
+        border-radius: 24px;
+    }
+
+    .pizza-card img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+    }
+
+    .pizza-card .pizza-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: white;
+    }
+
+    .pizza-card .pizza-info .sabor {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+    }
 }

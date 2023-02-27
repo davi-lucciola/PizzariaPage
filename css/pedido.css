@@ -16,7 +16,6 @@ main div#pedido {
 
     width: 40%;
     min-height: 80vh;
-    max-height: fit-content;
     background: rgb(206, 50, 50);
 }
 

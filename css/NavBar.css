@@ -20,7 +20,7 @@ a.logo img:hover {
 }
 
 /* Texto Botão */
-nav ul a {
+nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 24pt;
@@ -29,7 +29,7 @@ nav ul a {
 }
 
 /* Desktop */
-@media (min-width: 821px) {
+@media (min-width: 850px) {
     /* Header */
     /* NavBar */
     nav {
@@ -53,7 +53,7 @@ nav ul a {
     }
     
     /* Botão */
-    nav ul a li {
+    nav ul li {
         text-align: center;
     
         width: 200px;
@@ -71,14 +71,14 @@ nav ul a {
         box-shadow: 1px 1px 5px #222;
     }
 
-    nav ul li a {
+    nav ul li a{
         letter-spacing: 8px;
         font-size: 36px;
     }
 }
 
 /* Mobile */
-@media (max-width: 820px) {
+@media (max-width: 850px) {
     nav {
         box-sizing: border-box;
         width: 100%;
@@ -92,7 +92,21 @@ nav ul a {
         box-shadow: 1px 1px 14px #222;
     }
 
-    nav ul a {
+    nav ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(206, 50, 50);
+
+        transition: 0.4s;
+    }
+
+    nav ul:hover {
+        background-color: rgb(175, 44, 44);
+    }
+
+    nav ul li {
         width: 50%;
         display: flex;
         align-items: center;
@@ -102,22 +116,15 @@ nav ul a {
         transition: 0.3s;
     }
 
-    nav ul {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(206, 50, 50);
-    }
-
-    nav ul a:hover {
+    nav ul li:hover {
         background-color: rgb(175, 44, 44);
         transform: translateY(5px);
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
 
-    nav ul:hover {
-        background-color: rgb(175, 44, 44);
+    nav ul li a {
+        width: 100%;
+        text-align: center;
     }
 }
