@@ -2,10 +2,11 @@ main {
     display: flex;
     align-items: end;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 #pizza-cards {
-    padding-top: 8vh;
+    padding: 8vh 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,38 +15,133 @@ main {
     min-height: 80vh;
 }
 
-@media (max-width: 800px) {
+.pizza-card {
+    display: flex;
+    gap: 32px;
+
+    background: rgb(206, 50, 50);
+    border-radius: 24px;
+
+    color: white;
+    border-left: 12px solid rgb(56, 172, 56);
+    
+    transition: 0.3s;
+}
+
+.pizza-card:hover {
+    background-color: rgb(175, 44, 44);
+}
+
+.pizza-card img {
+    border-radius: 50%;
+
+    border: 6px solid rgb(56, 172, 56);
+    transition: 0.5s;
+}
+
+.pizza-card .pizza-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-card .pizza-info .sabor, .pizza-card .preco {
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media (min-width: 800px) {
     #pizza-cards {
-        width: 70%;
+        height: 10vh;
+        width: 700px;
     }
 
     .pizza-card {
-        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 32px 32px;
+    }
+
+    .pizza-card:hover {
+        transform: scale(1.05);
+    }
+
+    .pizza-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .pizza-card img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .pizza-card .pizza-info {
+        align-items: start;
+    }
+
+    .pizza-card .preco {
+        background: rgb(56, 172, 56);
+        border-radius: 8px;
+
+        text-align: center;
+        font-size: 36px;
+
+        transition: 0.3s;
+    }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    #pizza-cards {
+        width: 60%;
+    }
+
+    .pizza-card {
         flex-direction: column;
         align-items: center;
-        gap: 48px;
 
-        background: rgb(206, 50, 50);
         padding: 32px 48px;
-        border-radius: 24px;
+    }
+
+    .pizza-card:hover {
+        transform: scale(1.03);
+    }
+
+    .pizza-card:hover img {
+        transform: scale(1.1);
     }
 
     .pizza-card img {
         width: 15rem;
         height: 15rem;
-        border-radius: 50%;
     }
 
     .pizza-card .pizza-info {
-        display: flex;
-        flex-direction: column;
         align-items: center;
-
-        color: white;
     }
 
     .pizza-card .pizza-info .sabor {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+
+    .pizza-card .preco {
+        background: rgb(56, 172, 56);
+        padding: 4px 12px;
+        border-radius: 8px;
+
+        text-align: center;
+        font-size: 36px;
+
+        transition: 0.3s;
+    }
+
+    .pizza-card .preco:hover {
+        background: rgb(46, 139, 46);
+    }
+
+    .pizza-card .pizza-info .descricao {
+        text-align: center;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
