@@ -29,17 +29,16 @@ nav ul li a {
 }
 
 /* Desktop */
-@media (min-width: 850px) {
+@media (min-width: 881px) {
     /* Header */
     /* NavBar */
     nav {
         box-sizing: border-box;
         width: 100%;
         background-color: bisque;
-        padding-inline: 10%;
     
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     
         box-shadow: 1px 1px 14px #222;
@@ -78,9 +77,8 @@ nav ul li a {
 }
 
 /* Mobile */
-@media (max-width: 850px) {
+@media (max-width: 880px) {
     nav {
-        box-sizing: border-box;
         width: 100%;
         background-color: bisque;
     
@@ -107,7 +105,7 @@ nav ul li a {
     }
 
     nav ul li {
-        width: 50%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;

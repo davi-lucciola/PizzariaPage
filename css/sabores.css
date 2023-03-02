@@ -37,6 +37,7 @@ main {
 
     border: 6px solid rgb(56, 172, 56);
     transition: 0.5s;
+    object-fit: cover;
 }
 
 .pizza-card .pizza-info {
@@ -48,7 +49,18 @@ main {
     font-family: 'Bebas Neue', cursive;
 }
 
-@media (min-width: 800px) {
+.pizza-card .preco:hover {
+    background: rgb(46, 139, 46);
+}
+
+.pizza-card .pizza-info .descricao {
+    text-align: start;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Desktop */
+@media (min-width: 821px) {
     #pizza-cards {
         height: 10vh;
         width: 700px;
@@ -58,6 +70,7 @@ main {
         width: 100%;
         align-items: center;
         justify-content: space-between;
+        border-right: 12px solid rgb(56, 172, 56);
 
         padding: 32px 32px;
     }
@@ -76,22 +89,35 @@ main {
     }
 
     .pizza-card .pizza-info {
-        align-items: start;
+        width: 400px;
+    }
+
+    .pizza-card .pizza-info .sabor {
+        font-size: 4rem;
+    }   
+
+    .pizza-card .pizza-info .descricao {
+        text-align: start;
+        font-size: 0.8rem;
     }
 
     .pizza-card .preco {
         background: rgb(56, 172, 56);
         border-radius: 8px;
+        padding: 8px 16px;
+
+        width: 150px;
 
         text-align: center;
         font-size: 36px;
 
         transition: 0.3s;
+        flex-wrap: nowrap;
     }
 }
 
 /* Mobile */
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     #pizza-cards {
         width: 60%;
     }
@@ -124,6 +150,11 @@ main {
         font-size: 4rem;
     }
 
+    .pizza-card .pizza-info .descricao {
+        text-align: center;
+        font-size: 1rem;
+    }
+
     .pizza-card .preco {
         background: rgb(56, 172, 56);
         padding: 4px 12px;
@@ -133,15 +164,5 @@ main {
         font-size: 36px;
 
         transition: 0.3s;
-    }
-
-    .pizza-card .preco:hover {
-        background: rgb(46, 139, 46);
-    }
-
-    .pizza-card .pizza-info .descricao {
-        text-align: center;
-        font-size: 1rem;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
