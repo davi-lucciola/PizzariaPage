@@ -1,22 +1,38 @@
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+:root {
+    --red-primary: rgb(206, 50, 50);
+    --red-primary-hover: rgb(175, 44, 44);
+    --green-secondary: rgb(56, 172, 56);
+    --title-font: 'Bebas Neue', cursive;
 }
 
-main div#pedido {
+main {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#card-pedido {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
 
+    width: 700px;
     margin: 8vh;
-    padding-top: 8vh;
+    padding: 8vh 0;
     border-radius: 24px;
 
-    width: 40%;
-    min-height: 80vh;
-    background: rgb(206, 50, 50);
+    border-top: 12px solid var(--green-secondary);
+    background-color: var(--red-primary);
+    color: white;
+    font-family: var(--title-font);
+}
+
+#card-pedido h1 {
+    font-family: var(--title-font);
+    font-size: 4rem;
 }
 
 .form_pedido  {

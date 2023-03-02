@@ -1,3 +1,11 @@
+:root {
+    --red-primary: rgb(206, 50, 50);
+    --red-primary-hover: rgb(175, 44, 44);
+    --green-secondary: rgb(56, 172, 56);
+    --green-secondary-hover: rgb(46, 139, 46);
+}
+
+/* Global */
 main {
     display: flex;
     align-items: end;
@@ -19,23 +27,23 @@ main {
     display: flex;
     gap: 32px;
 
-    background: rgb(206, 50, 50);
+    background: var(--red-primary);
     border-radius: 24px;
 
     color: white;
-    border-left: 12px solid rgb(56, 172, 56);
+    border-left: 12px solid var(--green-secondary);
     
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .pizza-card:hover {
-    background-color: rgb(175, 44, 44);
+    background-color: var(--red-primary-hover);
 }
 
 .pizza-card img {
     border-radius: 50%;
 
-    border: 6px solid rgb(56, 172, 56);
+    border: 6px solid var(--green-secondary);
     transition: 0.5s;
     object-fit: cover;
 }
@@ -49,8 +57,19 @@ main {
     font-family: 'Bebas Neue', cursive;
 }
 
+.pizza-card .preco {
+    background-color: var(--green-secondary);
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 36px;
+
+    transition: 0.3s;
+}
+
 .pizza-card .preco:hover {
-    background: rgb(46, 139, 46);
+    background: var(--green-secondary-hover);
+    cursor: default;
 }
 
 .pizza-card .pizza-info .descricao {
@@ -102,16 +121,9 @@ main {
     }
 
     .pizza-card .preco {
-        background: rgb(56, 172, 56);
-        border-radius: 8px;
         padding: 8px 16px;
 
         width: 150px;
-
-        text-align: center;
-        font-size: 36px;
-
-        transition: 0.3s;
         flex-wrap: nowrap;
     }
 }
@@ -156,13 +168,6 @@ main {
     }
 
     .pizza-card .preco {
-        background: rgb(56, 172, 56);
         padding: 4px 12px;
-        border-radius: 8px;
-
-        text-align: center;
-        font-size: 36px;
-
-        transition: 0.3s;
     }
 }

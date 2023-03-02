@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+    --button-font: 'Changa', sans-serif;
+    --red-primary: rgb(206, 50, 50);
+    --red-primary-hover: rgb(175, 44, 44);
+}
+/* Global */
 * {
     list-style: none;
     margin: 0;
@@ -25,7 +32,7 @@ nav ul li a {
     color: white;
     font-size: 24pt;
     font-weight: 900;
-    font-family: 'Changa', sans-serif;
+    font-family: var(--button-font);
 }
 
 /* Desktop */
@@ -59,13 +66,13 @@ nav ul li a {
         padding: 5px 20px;
         border-radius: 32px;
     
-        background-color: rgb(206, 50, 50);
+        background-color: var(--red-primary);
         transition: 0.3s;
     }
     
     /* Texto Botão Hover */
     nav ul li:hover {
-        background-color: rgb(175, 44, 44);
+        background-color: var(--red-primary-hover);
         transform: scale(1.1);
         box-shadow: 1px 1px 5px #222;
     }
@@ -95,13 +102,13 @@ nav ul li a {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(206, 50, 50);
+        background-color: var(--red-primary);
 
         transition: 0.4s;
     }
 
     nav ul:hover {
-        background-color: rgb(175, 44, 44);
+        background-color: var(--red-primary-hover);
     }
 
     nav ul li {
@@ -110,12 +117,12 @@ nav ul li a {
         align-items: center;
         justify-content: center;
         
-        background-color: rgb(206, 50, 50);
+        background-color: var(--red-primary);
         transition: 0.3s;
     }
 
     nav ul li:hover {
-        background-color: rgb(175, 44, 44);
+        background-color: var(--red-primary-hover);
         transform: translateY(5px);
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
