@@ -2,6 +2,7 @@
     --red-primary: rgb(206, 50, 50);
     --red-primary-hover: rgb(175, 44, 44);
     --green-secondary: rgb(56, 172, 56);
+    --green-secondary-hover: rgb(46, 139, 46);
     --title-font: 'Bebas Neue', cursive;
 }
 
@@ -35,8 +36,47 @@ main {
     font-size: 4rem;
 }
 
-.form_pedido  {
+.form-pedido  {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.form-pedido .form-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.form-item label {
+    font-size: 2rem;
+}
+
+.form-item input, .form-item select {
+    width: 90vh;
+    height: 60px;
+    border-radius: 12px;
+    padding-left: 8px;
+}
+
+.form-pedido button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 24px;
+    margin-top: 24px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    align-self: center;
+
+    background-color: var(--green-secondary);
+    transition: 0.2s;
+}
+
+.form-pedido button:hover {
+    background-color: var(--green-secondary-hover);
 }
