@@ -1,26 +1,10 @@
-:root {
-    --red-primary: rgb(206, 50, 50);
-    --red-primary-hover: rgb(175, 44, 44);
-    --green-secondary: rgb(56, 172, 56);
-    --green-secondary-hover: rgb(46, 139, 46);
-}
-
 /* Global */
-main {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-#pizza-cards {
+#anchor-pizza-sabores {
     padding: 8vh 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6vh;
-
-    min-height: 80vh;
 }
 
 .pizza-card {

@@ -7,9 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/NavBar.css">
-    <link rel="shortcut icon" href="../images/pizza-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sabores.css">
+    <link rel="stylesheet" href="./css/pedido.css">
+    <link rel="stylesheet" href="./css/NavBar.css">
+    <link rel="shortcut icon" href="./images/pizza-favicon.png" type="image/x-icon">
     <title> Pizzaria </title>
 </head>
 <body>
@@ -17,15 +19,61 @@
         <nav>
             <a href="/" class="logo"><img src="../images/pizzaria-logo.png" alt="pizzaria-logo"/></a>
             <ul class="nav-list">
-                <li> <a href="./pages/sabores.html">  Sabores  </a> </li>
-                <li> <a href="./pages/pedido.html"> Pedido </a> </li>
+                <li> <a href="#anchor-pizza-sabores">  Sabores  </a> </li>
+                <li> <a href="#anchor-pizza-pedido"> Pedido </a> </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="carrossel">
+        <section id="carrossel">
             <img src="/images/pizza-background.jpg" alt="pizzaria-img1">
-        </div>
+        </section>
+
+        <section id="anchor-pizza-sabores">
+            <section class="pizza-card">
+                <img src="../images/sabores/calabresa.jpg" alt="pizza-calabresa">
+                <section class="pizza-info">
+                    <strong class="sabor"> Calabresa </strong>
+                    <small class="descricao">
+                        Molho de tomate, queijo, calabresa, azeitona e cebola
+                    </small>
+                </section>
+                <span class="preco"> R$ 34.99 </span>
+            </section>
+            <section class="pizza-card">
+                <img src="../images/sabores/pizza-4-queijos.png" alt="pizza-4-queijos">
+                <section class="pizza-info">
+                    <strong class="sabor"> 4 Queijos </strong>
+                    <small class="descricao">
+                        Molho de tomate, e queijos: Mussarela, Gorgonzola, Cheedar e Catupiry
+                    </small>
+                </section>
+                <span class="preco">R$34.99</span>
+            </section>
+        </section>
+
+        <section id="anchor-pizza-pedido">
+            <h1> Faça Seu Pedido </h1>
+            <form action="/" method="get" class="form-pedido">
+                <p class="form-item">
+                    <label for="nome"> Nome </label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+                <p class="form-item">
+                    <label for="sabor"> Sabor </label>
+                    <select name="sabor" id="sabor">
+                        <option value="" selected disabled> Selecione os Sabores </option>
+                        <option value="calabresa"> Calabresa </option>
+                        <option value="calabresa"> 4 Queijos </option>
+                    </select>
+                </p>
+                <p class="form-item">
+                    <label for="endereco"> Endereco </label>
+                    <input type="text" name="endereco" id="endereco">
+                </p>
+                <button type="submit"> Concluir Pedido </button>
+            </form>
+        </section>
     </main>
     <footer>
         <img src="../images/footer-png.png" alt="footer-red-png">

@@ -1,19 +1,4 @@
-:root {
-    --red-primary: rgb(206, 50, 50);
-    --red-primary-hover: rgb(175, 44, 44);
-    --green-secondary: rgb(56, 172, 56);
-    --green-secondary-hover: rgb(46, 139, 46);
-    --title-font: 'Bebas Neue', cursive;
-}
-
-main {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-#card-pedido {
+#anchor-pizza-pedido {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -22,6 +7,7 @@ main {
 
     width: 700px;
     margin: 8vh;
+    margin-bottom: 15vh;
     padding: 8vh 0;
     border-radius: 24px;
 
@@ -31,7 +17,7 @@ main {
     font-family: var(--title-font);
 }
 
-#card-pedido h1 {
+#anchor-pizza-pedido h1 {
     font-family: var(--title-font);
     font-size: 4rem;
 }
@@ -54,10 +40,11 @@ main {
 }
 
 .form-item input, .form-item select {
-    width: 90vh;
+    width: 400px;
     height: 60px;
     border-radius: 12px;
     padding-left: 8px;
+    font-size: 18px;
 }
 
 .form-pedido button {
@@ -74,7 +61,6 @@ main {
     align-self: center;
 
     background-color: var(--green-secondary);
-    transition: 0.2s;
 }
 
 .form-pedido button:hover {

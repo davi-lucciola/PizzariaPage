@@ -1,9 +1,5 @@
 /* Variables */
-:root {
-    --button-font: 'Changa', sans-serif;
-    --red-primary: rgb(206, 50, 50);
-    --red-primary-hover: rgb(175, 44, 44);
-}
+
 /* Global */
 * {
     list-style: none;
@@ -13,7 +9,7 @@
 }
 
 /* Logo */
-a.logo img {
+.logo img {
     width: 10rem;
     height: 10rem;
     transition: 0.3s;
@@ -22,7 +18,7 @@ a.logo img {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
-a.logo img:hover {
+.logo img:hover {
     transform: scale(1.1);
 }
 
@@ -42,7 +38,7 @@ nav ul li a {
     nav {
         box-sizing: border-box;
         width: 100%;
-        background-color: bisque;
+        background-color: var(--nav-bar-background); 
     
         display: flex;
         justify-content: space-around;
